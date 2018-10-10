@@ -12,59 +12,93 @@
     <title>Mali stolp - GeoCachingEdu</title>
 </head>
 <body>
-<main>
-<div class="jumbotron text-capitalize text-center" href="../../index.html">
-    <h1><a href="../../index.html"><img alt="Logo" src="../../img/geocaching.png" style="width:50px;height:50px;"></a> GeoCachingEdu</h1>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <div class="col-sm-4">
-                <div id="map" style="width:300px;height:300px;"></div>
-
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="../../index.html">
+                <img alt="Logo" src="../../img/geocaching.png" style="width:50px;height:50px;">
+                GeoCachingEdu
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../home/home.html">
+                            Lokacije
+                        </a>
+                    </li>
+                </ul>
+                <!-- anonymous user -->
+                <!--
+                <a class="btn btn-secondary mt-md-0" href="../login/login.html">Prijava</a>
+                &nbsp;
+                <a class="btn btn-primary mt-md-0" href="../login/register.html">Registracija</a>
+                -->
+                <!-- registered user -->
+                <img src="../../img/profile-m.jpg" style="width:50px"> &nbsp;
+                <spam class="navbar-text mt-md-0" style="color: #ffffff">Andrej Andrejevič</spam> &nbsp;
+                <button class="btn btn-secondary">Odjavi me!</button>
 
             </div>
-        </div>
-        <div class="col-sm-4">
-            <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-            <h3>Mali stolp</h3>
-            <p>46.0511, 14.5051</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <!-- redirect to login or commenting view depends if already logged in with callback url -->
-            <a type="button" class="btn btn-outline-primary" href="../comment/comment.html">Komentiraj in oceni!</a>
-        </div>
-    </div>
-</div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="col-sm-4">
+                        <div id="map" style="width:300px;height:300px;"></div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2">
-            <img src="../../img/profile-f.jpg" class="img-thumbnail" style="width:100px;height:100px;">
-        </div>
-        <div class="col-sm-4">
-            <h5>Andreja Andrejčič</h5>
-            <span>5 September ob 13:56<br></span>
-            <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-            <p>Kr ok lokacija.</p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-2">
-            <img src="../../img/profile-m.jpg" class="img-thumbnail" style="width:100px;height:100px;">
-        </div>
-        <div class="col-sm-4">
-            <h5>Andrej Andrejčič</h5>
-            <span>12 September ob 07:56<br></span>
-            <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
-            <p>Lahko bi blo bolš...</p>
-        </div>
-    </div>
 
-</div>
-</main>
-<footer class="card-footer">
-        Test
-</footer>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                    <h3>Mali stolp</h3>
+                    <p>46.0511, 14.5051</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <!-- redirect to login or commenting view depends if already logged in with callback url -->
+                    <a type="button" class="btn btn-outline-primary" href="../comment/comment.html">Komentiraj in oceni!</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="../../img/profile-f.jpg" class="img-thumbnail" style="width:100px;height:100px;">
+                </div>
+                <div class="col-sm-4">
+                    <h5>Andreja Andrejčič</h5>
+                    <span>5 September ob 13:56<br></span>
+                    <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                    <p>Kr ok lokacija.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="../../img/profile-m.jpg" class="img-thumbnail" style="width:100px;height:100px;">
+                </div>
+                <div class="col-sm-4">
+                    <h5>Andrej Andrejčič</h5>
+                    <span>12 September ob 07:56<br></span>
+                    <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+                    <p>Lahko bi blo bolš...</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row" style="margin-top: 0px;margin-bottom: 0px">
+                <div class="col-sm-2">
+                    <a href="https://www.fri.uni-lj.si/sl"><img src="../../img/fri_logo.png" style="height: 90px"></a>
+                </div>
+                <div class="col-sm-2 text-right offset-sm-8 align-self-md-center">
+                    <a class="btn btn-primary" href="../about/about.html">Več o meni</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 <script>
     var map;
     function initMap() {

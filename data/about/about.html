@@ -8,28 +8,67 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <script type="text/javascript" src="http://livejs.com/live.js"></script>
-    <title>GeoCachingEdu - O meni</title>
+    <title>O meni - GeoCachingEdu</title>
 </head>
 <body>
-<div class="jumbotron text-capitalize text-center" href="../../index.html">
-    <h1><a href="../../index.html"><img alt="Logo" src="../../img/geocaching.png" style="width:50px;height:50px;"></a> GeoCachingEdu</h1>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-2">
-            <img alt="My photo" src="https://scontent.flju2-2.fna.fbcdn.net/v/t1.0-1/p160x160/41804984_10214436635562185_5524703624975876096_n.jpg?_nc_cat=106&oh=cbb5734bae24b89eacadfd7b2ef44f68&oe=5C54B888">
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="../../index.html">
+                <img alt="Logo" src="../../img/geocaching.png" style="width:50px;height:50px;">
+                GeoCachingEdu
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../home/home.html">
+                            Lokacije
+                        </a>
+                    </li>
+                </ul>
+                <!-- anonymous user -->
+                <!--
+                <a class="btn btn-secondary mt-md-0" href="../login/login.html">Prijava</a>
+                &nbsp;
+                <a class="btn btn-primary mt-md-0" href="../login/register.html">Registracija</a>
+                -->
+                <!-- registered user -->
+                <img src="../../img/profile-m.jpg" style="width:50px"> &nbsp;
+                <spam class="navbar-text mt-md-0" style="color: #ffffff">Andrej Andrejevič</spam> &nbsp;
+                <button class="btn btn-secondary">Odjavi me!</button>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img alt="My photo" src="https://scontent.flju2-2.fna.fbcdn.net/v/t1.0-1/p160x160/41804984_10214436635562185_5524703624975876096_n.jpg?_nc_cat=106&oh=cbb5734bae24b89eacadfd7b2ef44f68&oe=5C54B888">
+                </div>
+                <div class="col-sm-10">
+                    <h3>Jan Šubelj, dipl. ing. el. (VŠ)</h3>
+                    <p>
+                        Študent fakultete za računalništvo in informatiko. Diplomiral na Fakulteti za elektrotehniko.
+                        Spisal to spletno stran. Zelo slab v designu kot je očitno, zato veliko boljši v Backendu. Linux
+                        entuziast. Želim uporabljati slovenščino kolikor se le da, ker žal izgublja svojo moč v svetu in kar
+                        je še hujše, v naši državi. (Prosim ne uprabljati slovenščine v kodi ker je samo slabo)
+                    </p>
+                    <p><a href="../../files/cv.pdf">Moj CV</a></p>
+                </div>
+            </div>
         </div>
-        <div class="col-sm-10">
-            <h3>Jan Šubelj, dipl. ing. el. (VŠ)</h3>
-            <p>
-                Študent fakultete za računalništvo in informatiko. Diplomiral na Fakulteti za elektrotehniko.
-                Spisal to spletno stran. Zelo slab v designu kot je očitno, zato veliko boljši v Backendu. Linux
-                entuziast. Želim uporabljati slovenščino kolikor se le da, ker žal izgublja svojo moč v svetu in kar
-                je še hujše, v naši državi. (Prosim ne uprabljati slovenščine v kodi ker je samo slabo)
-            </p>
-            <p><a href="../../files/cv.pdf">Moj CV</a></p>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row" style="margin-top: 0px;margin-bottom: 0px">
+                <div class="col-sm-2">
+                    <a href="https://www.fri.uni-lj.si/sl"><img src="../../img/fri_logo.png" style="height: 90px"></a>
+                </div>
+                <div class="col-sm-2 text-right offset-sm-8 align-self-md-center">
+                    <a class="btn btn-primary" href="../about/about.html">Več o meni</a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
+    </footer>
 </body>
 </html>
