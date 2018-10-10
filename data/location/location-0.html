@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/star-rating.css">
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <title>GeoCachingEdu</title>
+</head>
+<body>
+<div class="jumbotron text-capitalize text-center" href="../../index.html">
+    <h1><a href="../../index.html"><img alt="Logo" src="../../img/geocaching.png" style="width:50px;height:50px;"></a> GeoCachingEdu</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="col-sm-4">
+                <div id="map" style="width:300px;height:300px;"></div>
+
+
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+            <h3>Mali stolp</h3>
+            <p>46.0511, 14.5051</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <!-- redirect to login or commenting view depends if already logged in with callback url -->
+            <button type="button" class="btn btn-outline-primary">Komentiraj in oceni!</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            <img src="../../img/profile-f.jpg" class="img-thumbnail" style="width:100px;height:100px;">
+        </div>
+        <div class="col-sm-4">
+            <h5>Andreja Andrejčič</h5>
+            <span>5 September ob 13:56<br></span>
+            <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+            <p>Kr ok lokacija.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <img src="../../img/profile-m.jpg" class="img-thumbnail" style="width:100px;height:100px;">
+        </div>
+        <div class="col-sm-4">
+            <h5>Andrej Andrejčič</h5>
+            <span>12 September ob 07:56<br></span>
+            <span>&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+            <p>Could be better.</p>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script>
+    var map;
+    function initMap() {
+        var myLatLng = {lat: 46.0511, lng: 14.5051}
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 15
+        });
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Mali stolp'
+        });
+
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeq9C6H_NJvFx3Tx4K8EMYYYVi8VTwx0I&callback=initMap" async defer></script>
+</body>
+</html>

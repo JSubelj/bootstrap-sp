@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <script type="text/javascript" src="http://livejs.com/live.js"></script>
+    <title>GeoCachingEdu - Registracija</title>
+</head>
+<body>
+<div class="jumbotron text-capitalize text-center" href="../../index.html">
+    <h1><a href="../../index.html"><img alt="Logo" src="../../img/geocaching.png" style="width:50px;height:50px;"></a> GeoCachingEdu</h1>
+</div>
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="img_url_input">Url profilne slike</label>
+            <input type="url" class="form-control" id="img_url_input" placeholder="URL">
+        </div>
+        <div class="form-group">
+            <label for="name_input">Ime*</label>
+            <input type="text" class="form-control" id="name_input" placeholder="Vnesite svoje ime">
+        </div>
+        <div class="form-group">
+            <label for="surname_input">Priimek</label>
+            <input type="text" class="form-control" id="surname_input" placeholder="Vnesite svoj priimek">
+        </div>
+        <div class="form-group">
+            <label for="email_input">Poštni naslov*</label>
+            <input type="email" class="form-control" id="email_input" aria-describedby="emailHelp" placeholder="Vnesite poštni naslov">
+            <small id="emailHelp" class="form-text text-muted">Nikoli ne bomo izdali vašega poštnega naslova!</small>
+        </div>
+        <div class="form-group">
+            <label for="password_input">Geslo*</label>
+            <input type="password" class="form-control" id="password_input" placeholder="Geslo">
+        </div>
+        <div class="form-group">
+            <label for="password_input_confirm">Potrdite geslo*</label>
+            <input type="password" class="form-control" id="password_input_confirm" placeholder="Geslo">
+        </div>
+        <div>
+            <p>Vnosi označeni z zvezdico (*) so zahtevani.</p>
+        </div>
+        <!-- Redirects back to callback addr & sends data to server -->
+        <button type="button" class="btn btn-primary">Registriraj se!</button>
+    </form>
+</div>
+</body>
+</html>
